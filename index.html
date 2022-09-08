@@ -2,12 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/img/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie</title>
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand-lg bg-white position-absolute w-100 shadow-sm">
+      <div class="container py-2 ">
+        <a class="navbar-brand " href="#">
+          <img src="./public/img/icon.png" class="logo" alt="">
+          <span class="text-primary g fs-4 ms-2">Foodie</span>
+        </a>
+        <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="text-primary"><i class="fs-3 p-1 fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary  text-center" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary  text-center" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary  text-center" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary  text-center" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row min-vh-100 justify-content-around align-items-center">
+        <div class="col-12 col-md-6 col-lg-5 mt-5 mt-md-0 pt-5 pt-md-0">
+          <h1 class="display-3 kanit text-primary mb-2 wow animate__fadeInLeft" ><span class="element"></span></h1>
+          <p class="text-black-50 mb-2 wow animate__fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.3s">Lorem  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsa! ipsum dolor sit, amet consectetur adipisicing elit. Quam est provident commodi labore iste? Itaque error dolorem totam nihil odio!</p>
+          <h4 class="mb-4 text-black-50 wow animate__fadeInLeft" data-wow-delay="0.5s">Join the best food of week</h4>
+          <button class="btn btn-primary me-1 wow animate__fadeInLeft" data-wow-delay="0.7s"><i class="fa-solid fa-cart-shopping text-white"></i></button>
+          <button class="b btn btn-outline-primary text-primary px-3 wow animate__fadeInLeft" data-wow-delay="0.9s">View menu</button>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <img src="./public/img/home.png" class=" w-100 wow animate__rollIn " data-wow-delay="1.3s" data-wow-duration="1.7s" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row min-vh-100 align-items-center justify-content-around">
+        <div class="col-12 col-md-6 col-lg-5">
+          <img src="./public/img/about.jpg" class="shadow rounded w-100 wow animate__fadeInLeft" data-wow-duration="1.5s" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <p class="text-dark mb-3 wow animate__fadeInRight"  data-wow-duration="1.5s">About</p>
+          <h2 class="text-primary wow animate__fadeInRight" data-wow-delay="0.3s" data-wow-duration="1.2s">We cook the best tasty food</h2>
+          <p class=" text-black-50 wow animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.2s">Lorem Lorem ipsum dolor sit amet. ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officiis iusto id repellendus maiores non esse deserunt labore assumenda voluptates.</p>
+          <button class="mt-2 px-3 btn btn-primary text-white wow animate__fadeInRight" data-wow-delay="0.6s" data-wow-duration="1.2s">Explorer History</button>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animate__animated",
+        offset:       0,
+        mobile:       true,
+        callback:     function(box) {
+        },
+        scrollContainer: null,
+        resetAnimation: true, 
+    });
+    wow.init();
+    </script>
   </body>
 </html>

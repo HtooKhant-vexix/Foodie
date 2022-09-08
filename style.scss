@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Rubik:wght@300;500;700&display=swap');
+@import "./node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+
+$font-family-sans-serif: 'Rubik','Kanit', sans-serif;
+$navbar-nav-link-padding-x: 1.5rem;
+$primary: rgb(31, 138, 61); 
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.kanit{
+    font-family: Kanit;
+}
+.logo{
+    height: 45px;
+    transition: transform 0.6s;
+}
+.nav-pills{
+    transition: transform 0.4s;
+}
+nav:hover{
+    .logo{
+    transform: rotate(180deg);
+}
+    .nav-pills{
+        transform: translateY(-6px);
+    }
+} 
+.b:hover{
+    color: white !important;
+}
+.nav-link.active{
+    color: white !important;
+    background-color: $primary;
+    border-radius: 5px;
+}
