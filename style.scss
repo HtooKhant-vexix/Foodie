@@ -9,6 +9,9 @@ $primary: rgb(31, 138, 61);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+.z-index{
+    z-index: 100;
+}
 .kanit{
     font-family: Kanit;
 }
@@ -34,4 +37,23 @@ nav:hover{
     color: white !important;
     background-color: $primary;
     border-radius: 5px;
+}
+svg{
+    fill: $primary;
+}
+.card img{
+    transition: transform 1.3s;
+}
+.card.hv{
+    transition: transform 0.8s;
+}
+.card.hv{
+    &:hover{
+        transform: translateY(-35px);
+        box-shadow: $box-shadow;
+    }
+    &:hover img{
+        transform: rotate(90deg);
+    }
+    
 }
